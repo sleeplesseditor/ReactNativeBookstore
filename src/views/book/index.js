@@ -1,19 +1,12 @@
-import React from 'react';
-import { createStackNavigator } from 'react-navigation';
-import { Button, View } from 'react-native';
+import { createBottomTabNavigator } from 'react-navigation';
+import {
+    AllBooksTab,
+    FictionBooksTab,
+    NonfictionBooksTab,
+} from '../../components/book-type-tabs';
 
-const BooksScreen = ({ navigation }) => (
-    <View>
-      <Button
-        onPress={() => navigation.navigate('Authors')}
-        title="Go to Authors"
-      />
-      <Button onPress={() => navigation.openDrawer()} title="Open Drawer"/>
-    </View>
-  )
-
-export default createStackNavigator({
-    Books: {
-        screen: BooksScreen,
-    },
+export default createBottomTabNavigator({
+    'All Books': AllBooksTab,
+    Fiction: FictionBooksTab,
+    NonFiction: NonfictionBooksTab
 })
