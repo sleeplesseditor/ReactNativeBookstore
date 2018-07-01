@@ -7,6 +7,6 @@ import {
 
 export default createBottomTabNavigator({
     'All Books': AllBooksTab,
-    Fiction: FictionBooksTab,
-    NonFiction: NonfictionBooksTab
+    'Fiction': FictionBooksTab,
+    'Non-Fiction': NonfictionBooksTab
 })

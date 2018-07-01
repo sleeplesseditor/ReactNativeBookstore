@@ -28,6 +28,6 @@ export const FictionBooksTab = () => (
 
 export const NonfictionBooksTab = () => (
     <View>
-        <Title text="Non-fiction Books" />
+        <Title text="Non-Fiction Books" />
     </View>
 )
